@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImmersiveTech Bahrain - AI/VR/AR Solutions</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -27,6 +30,10 @@
         <div class="container">
             <h1>Transforming Business & Education Through Immersive Technology</h1>
             <p>Cutting-edge VR, AR and AI-powered solutions for Bahrain's digital transformation</p>
+            <div class="cta-buttons">
+                <a href="services.html" class="button_1">Explore Services</a>
+                <a href="contact.html" class="button_2">Get Started</a>
+            </div>
         </div>
     </section>
 
@@ -34,7 +41,7 @@
         <div class="container">
             <h1>Subscribe To Our Newsletter</h1>
             <form>
-                <input type="email" placeholder="Enter Email...">
+                <input type="email" placeholder="Enter Email..." required>
                 <button type="submit" class="button_1">Subscribe</button>
             </form>
         </div>
@@ -61,12 +68,12 @@
     </section>
 
     <footer>
-        <p>ImmersiveTech Bahrain, Copyright &copy; 2023</p>
+        <p>ImmersiveTech Bahrain, Copyright &copy; <span id="year"></span></p>
     </footer>
 
-<script src="js/main.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/form-validation.js"></script>
-
+    <script>
+        // Simple JavaScript to update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
