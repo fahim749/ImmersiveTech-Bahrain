@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | ImmersiveTech Bahrain</title>
+    <title>ImmersiveTech Bahrain - AI/VR/AR Solutions</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,8 +17,8 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="services.html">Services</a></li>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -23,63 +26,54 @@
         </div>
     </header>
 
-    <section id="main">
+    <section id="showcase">
         <div class="container">
-            <article id="main-col">
-                <h1 class="page-title">Our Services</h1>
-                <ul id="services">
-                    <li>
-                        <h3>VR-Based Soft Skills Development</h3>
-                        <p>Our flagship Executive Leadership Development program powered by VR technology and AI-driven feedback systems. Features multi-device accessibility, inclusivity features, and comprehensive EDI training.</p>
-                        <p>Applications: Healthcare, Finance & Banking, Education, Customer Service</p>
-                    </li>
-                    <li>
-                        <h3>AR-Based Enhanced Content Development</h3>
-                        <p>Marker-based AR solutions requiring only a smartphone to transform learning experiences through 3D models, virtual labs, and interactive field trips.</p>
-                        <p>Applications: Education, Healthcare, Automotive, Tourism</p>
-                    </li>
-                    <li>
-                        <h3>Simulation-Based Process Optimization</h3>
-                        <p>Using Simul8 software for digital twin development, what-if scenario testing, bottleneck identification, and resource optimization.</p>
-                        <p>Applications: Healthcare, Retail, Supply Chain, Manufacturing</p>
-                    </li>
-                    <li>
-                        <h3>Premium: 3D Glasses-Free Screen Experience</h3>
-                        <p>Cutting-edge fully immersive rooms with 3D glasses-free technology for the ultimate visual engagement.</p>
-                    </li>
-                </ul>
-            </article>
+            <h1>Transforming Business & Education Through Immersive Technology</h1>
+            <p>Cutting-edge VR, AR and AI-powered solutions for Bahrain's digital transformation</p>
+            <div class="cta-buttons">
+                <a href="services.html" class="button_1">Explore Services</a>
+                <a href="contact.html" class="button_2">Get Started</a>
+            </div>
+        </div>
+    </section>
 
-            <aside id="sidebar">
-                <div class="dark">
-                    <h3>Get A Quote</h3>
-                    <form class="quote">
-                        <div>
-                            <label>Name</label><br>
-                            <input type="text" placeholder="Name">
-                        </div>
-                        <div>
-                            <label>Email</label><br>
-                            <input type="email" placeholder="Email Address">
-                        </div>
-                        <div>
-                            <label>Message</label><br>
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <button class="button_1" type="submit">Send</button>
-                    </form>
-                </div>
-            </aside>
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter Email..." required>
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="images/vr-training.jpg" alt="VR Training">
+                <h3>VR Soft Skills Development</h3>
+                <p>Executive leadership programs with AI-driven feedback for healthcare, finance, and more.</p>
+            </div>
+            <div class="box">
+                <img src="images/ar-content.jpg" alt="AR Content">
+                <h3>AR Enhanced Content</h3>
+                <p>Marker-based AR solutions for interactive learning across multiple industries.</p>
+            </div>
+            <div class="box">
+                <img src="images/simulation.jpg" alt="Process Simulation">
+                <h3>Process Optimization</h3>
+                <p>Simulation modeling to identify bottlenecks and optimize operations.</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>ImmersiveTech Bahrain, Copyright &copy; 2023</p>
+        <p>ImmersiveTech Bahrain, Copyright &copy; <span id="year"></span></p>
     </footer>
 
-<script src="js/main.js"></script>
-<script src="js/animations.js"></script>
-<script src="js/form-validation.js"></script>
-
+    <script>
+        // Simple JavaScript to update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
