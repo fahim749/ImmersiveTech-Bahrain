@@ -262,3 +262,53 @@ footer {
         gap: 15px;
     }
 }
+
+/* Services Page Specific Styles */
+.services-main {
+    padding: 100px 0 60px;
+}
+
+.service {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-text h2 {
+    color: var(--primary);
+    margin-top: 0;
+}
+
+.quote input, .quote textarea, .quote select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.quote textarea {
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+    
+    .service img {
+        width: 100%;
+    }
+}
