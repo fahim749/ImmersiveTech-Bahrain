@@ -1,0 +1,46 @@
+/* Animation styles */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.box, .team-member {
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.box.animated, .team-member.animated {
+    animation: fadeIn 0.8s forwards;
+}
+
+.box:nth-child(1).animated { animation-delay: 0.1s; }
+.box:nth-child(2).animated { animation-delay: 0.3s; }
+.box:nth-child(3).animated { animation-delay: 0.5s; }
+
+/* Mobile menu styles */
+.mobile-menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+}
+
+@media(max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    header nav ul {
+        display: none;
+        width: 100%;
+        clear: both;
+        padding-top: 20px;
+    }
+    
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
