@@ -1,20 +1,22 @@
 .header-banner {
   display: flex;
   align-items: center;
-  gap: 1.2rem;            /* Adjust space between title and image */
+  gap: 1.2rem;
   margin-bottom: 2rem;
-  flex-wrap: wrap;        /* Allow wrapping on small screens */
+  flex-wrap: wrap;
 }
 
 .header-banner h1 {
   margin: 0;
   font-size: 2.2rem;
-  flex: 1;                /* Allow the title to take available space */
+  flex: 1;
 }
 
 .header-image-large {
+  width: 100px !important;
   max-width: 100px !important;
-  width: 100% !important;
   height: auto !important;
   margin: 0 !important;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
