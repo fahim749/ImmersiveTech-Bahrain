@@ -1,0 +1,8 @@
+/* In your CSS file or <style> section */
+.header-image-large {
+    width: 350px;           /* Adjust as needed for your layout */
+    height: auto;           /* Maintain aspect ratio */
+    margin-top: 0.5rem;     /* Move closer to the banner, decrease as needed */
+    margin-bottom: 0.5rem;
+    display: block;
+}
