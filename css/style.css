@@ -1,20 +1,22 @@
 .header-banner {
   display: flex;
-  align-items: center;           /* Vertically center the title and image */
-  gap: 1.5rem;                   /* Space between title and image, adjust as needed */
-  margin-bottom: 2rem;           /* Space below the banner */
+  align-items: center;
+  gap: 1.2rem;            /* Adjust space between title and image */
+  margin-bottom: 2rem;
+  flex-wrap: wrap;        /* Allow wrapping on small screens */
 }
 
 .header-banner h1 {
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
+  flex: 1;                /* Allow the title to take available space */
 }
 
 .header-image-large {
-  width: 420px;                  /* Enlarged size - adjust as you see fit */
-  height: auto;                  /* Maintain aspect ratio */
-  margin-top: 0;                 /* No extra space above */
-  margin-bottom: 0;              /* No extra space below */
-  border-radius: 0.5rem;         /* Optional: rounded corners */
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12); /* Optional: subtle shadow */
+  max-width: 260px;       /* Limit the image width */
+  width: 100%;            /* Responsive width */
+  height: auto;
+  margin: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
