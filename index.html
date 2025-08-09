@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImmersiveTech Bahrain - AI/VR/AR Solutions</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .services {
+            padding: 3rem 0;
+        }
+        h2 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        .card-body {
+            padding: 1.5rem;
+        }
+        .industries {
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--dark);
+        }
+        .tech-badge {
+            display: inline-block;
+            background-color: var(--light);
+            color: var(--dark);
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .about {
+            background-color: var(--light);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        .cta {
+            padding: 3rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ImmersiveTech Bahrain</h1>
+            <p class="tagline">Cutting-edge AI/VR/AR Solutions for Business and Education</p>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Core Service Offerings</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <div class="card-header">VR-Based Soft Skills Development</div>
+                    <div class="card-body">
+                        <p>Executive Leadership Development program powered by VR technology and AI-driven feedback systems. Features multi-device accessibility and inclusivity features.</p>
+                        <p><strong>Key Benefits:</strong> Boosts confidence, accessibility, and engagement. Includes comprehensive Equity, Diversity, and Inclusion (EDI) training.</p>
+                        <div class="industries">
+                            <strong>Industries:</strong> Healthcare, Finance & Banking, Education, Consultancy, Customer Service, Technology
+                        </div>
+                        <div class="tech-badges">
+                            <span class="tech-badge">VR</span>
+                            <span class="tech-badge">AI Feedback</span>
+                            <span class="tech-badge">BODYSWAPS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">AR-Based Enhanced Content Development</div>
+                    <div class="card-body">
+                        <p>Marker-based AR solutions that transform learning experiences through 3D models, virtual labs, and interactive field trips.</p>
+                        <p><strong>Key Benefits:</strong> Makes immersive learning accessible and affordable, requiring only a smartphone.</p>
+                        <div class="industries">
+                            <strong>Industries:</strong> Education, Healthcare, Automotive, Manufacturing, Tourism & Hospitality
+                        </div>
+                        <div class="tech-badges">
+                            <span class="tech-badge">AR</span>
+                            <span class="tech-badge">Marker-based</span>
+                            <span class="tech-badge">Unity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Simulation-Based Process Optimization</div>
+                    <div class="card-body">
+                        <p>Utilizing Simul8 software to help businesses optimize processes through virtual modelling and testing.</p>
+                        <p><strong>Key Benefits:</strong> Digital twin development, what-if scenario testing, bottleneck identification, and resource optimization.</p>
+                        <div class="industries">
+                            <strong>Industries:</strong> Healthcare, Retail, Supply Chain & Logistics, Manufacturing, Call Centres
+                        </div>
+                        <div class="tech-badges">
+                            <span class="tech-badge">Simul8</span>
+                            <span class="tech-badge">Digital Twin</span>
+                            <span class="tech-badge">Process Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Premium: 3D Glasses-Free Screen Experience</div>
+                    <div class="card-body">
+                        <p>Cutting-edge fully immersive rooms equipped with 3D glasses-free screens and tablets.</p>
+                        <p><strong>Key Benefits:</strong> Unparalleled visual engagement without the need for special glasses.</p>
+                        <div class="industries">
+                            <strong>Industries:</strong> High-end Education, Luxury Retail, Premium Hospitality, Automotive Showrooms
+                        </div>
+                        <div class="tech-badges">
+                            <span class="tech-badge">3D Glasses-Free</span>
+                            <span class="tech-badge">Immersive Rooms</span>
+                            <span class="tech-badge">Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>Why Choose ImmersiveTech Bahrain?</h2>
+            <p>We combine extensive experience in immersive technologies with deep understanding of Bahrain's digital transformation needs, aligned with Vision 2030.</p>
+            <p>Our founder has delivered training for organizations including NHS Scotland, Ivey Business School, and Schulich School of Medicine and Dentistry.</p>
+            <p>Bahrain's thriving startup ecosystem and strategic GCC location provide the perfect foundation for our innovative solutions.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Business with Immersive Technology?</h2>
+            <p>Contact us to discuss how our solutions can benefit your organization.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ImmersiveTech Bahrain. All rights reserved.</p>
+            <p>Pioneering AI/VR/AR solutions for the Middle East region.</p>
+        </div>
+    </footer>
+</body>
+</html>
