@@ -13,7 +13,7 @@
 }
 
 .header-image-large {
-  max-width: 260px;       /* Limit the image width */
+  max-width: 100px;       /* Limit the image width */
   width: 100%;            /* Responsive width */
   height: auto;
   margin: 0;
