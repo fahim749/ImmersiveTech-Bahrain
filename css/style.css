@@ -13,10 +13,8 @@
 }
 
 .header-image-large {
-  max-width: 100px;       /* Limit the image width */
-  width: 100%;            /* Responsive width */
-  height: auto;
-  margin: 0;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  max-width: 100px !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 0 !important;
 }
