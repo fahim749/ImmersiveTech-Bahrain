@@ -1,8 +1,20 @@
-/* In your CSS file or <style> section */
+.header-banner {
+  display: flex;
+  align-items: center;           /* Vertically center the title and image */
+  gap: 1.5rem;                   /* Space between title and image, adjust as needed */
+  margin-bottom: 2rem;           /* Space below the banner */
+}
+
+.header-banner h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
 .header-image-large {
-    width: 350px;           /* Adjust as needed for your layout */
-    height: auto;           /* Maintain aspect ratio */
-    margin-top: 0.5rem;     /* Move closer to the banner, decrease as needed */
-    margin-bottom: 0.5rem;
-    display: block;
+  width: 420px;                  /* Enlarged size - adjust as you see fit */
+  height: auto;                  /* Maintain aspect ratio */
+  margin-top: 0;                 /* No extra space above */
+  margin-bottom: 0;              /* No extra space below */
+  border-radius: 0.5rem;         /* Optional: rounded corners */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12); /* Optional: subtle shadow */
 }
