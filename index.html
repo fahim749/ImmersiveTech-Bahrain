@@ -24,12 +24,31 @@
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             padding: 2rem 0;
-            text-align: center;
         }
-        .container {
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             width: 85%;
             max-width: 1200px;
             margin: 0 auto;
+        }
+        .header-text {
+            flex: 1;
+        }
+        .header-image {
+            flex: 1;
+            text-align: right;
+            margin-left: 2rem;
+        }
+        .header-image img {
+            max-height: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .header-image img:hover {
+            transform: scale(1.03);
         }
         h1 {
             margin: 0;
@@ -39,6 +58,7 @@
             font-size: 1.2rem;
             margin-top: 0.5rem;
         }
+        /* Rest of your existing CSS remains the same */
         .services {
             padding: 3rem 0;
         }
@@ -240,12 +260,19 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>ImmersiveTech Bahrain</h1>
-            <p class="tagline">Cutting-edge AI/VR/AR Solutions for Business and Education</p>
+        <div class="header-container">
+            <div class="header-text">
+                <h1>ImmersiveTech Bahrain</h1>
+                <p class="tagline">Cutting-edge AI/VR/AR Solutions for Business and Education</p>
+            </div>
+            <div class="header-image">
+                <!-- AI-generated VR/XR/Simulation image placeholder -->
+                <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Immersive XR Technology Visualization">
+            </div>
         </div>
     </header>
 
+    <!-- Rest of your content remains exactly the same -->
     <section class="services">
         <div class="container">
             <h2>Our Core Service Offerings</h2>
@@ -267,6 +294,7 @@
                     </div>
                 </div>
 
+                <!-- Rest of your service cards -->
                 <div class="card">
                     <div class="card-header">AR-Based Enhanced Content Development</div>
                     <img src="AR_2.png" alt="AR Content Development" class="card-image">
