@@ -35,8 +35,8 @@
     width: 100%;
   }
   .header-image-large {
-    width: 100%;
-    max-width: 100px; /* Let image expand but not too much */
+    width: 300%;
+    max-width: 200px; /* Let image expand but not too much */
     display: block;
     margin: 0 auto;
   }
