@@ -28,6 +28,28 @@
   display: block;
 }
 
+/* New logo wrapper styling */
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Adjust logo margin */
+.company-logo {
+    margin-bottom: 0.3rem;
+}
+
+/* Adjust tagline styling */
+.tagline {
+    margin-top: 0;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+
+
 /* ----------- MOBILE OPTIMIZATION ----------- */
 @media (max-width: 600px) {
   .header-container {
@@ -69,4 +91,15 @@
     max-width: 150px;
     margin: 0 auto 1rem;
   }
+
+.logo-wrapper {
+        align-items: center;
+    }
+    .tagline {
+        text-align: center;
+    }
+
+
+
+  
 }
