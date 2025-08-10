@@ -1,43 +1,69 @@
+/* Universal box-sizing for layout sanity */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Banner Styles */
 .header-banner {
   display: flex;
   align-items: center;
   gap: 1.2rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1rem 0 1rem;
+  background: linear-gradient(135deg, #004aad 0%, #38b6ff 100%);
 }
 
+/* Title Styling */
 .header-banner h1 {
   margin: 0;
   font-size: 2.2rem;
+  color: #fff;
   flex: 1;
+  word-break: break-word;
+  min-width: 0;
 }
 
+/* Image Styling */
 .header-image-large {
-  width: 400px;
-  max-width: 400px;
+  width: 200px;
+  max-width: 90vw;
   height: auto;
   margin: 0;
   border-radius: 0.5rem;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  display: block;
+  background: #eee;
 }
 
-/* ----------- MOBILE OPTIMIZATION ----------- */
+/* Responsive for Mobile */
 @media (max-width: 600px) {
   .header-banner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
-    padding: 1rem 0;
+    padding: 1.5rem 0.5rem 0 0.5rem;
   }
   .header-banner h1 {
-    font-size: 1.5rem;
-    text-align: left;
+    font-size: 1.4rem;
+    text-align: center;
     width: 100%;
   }
   .header-image-large {
-    width: 200%;
-    max-width: 200px; /* Let image expand but not too much */
-    display: block;
+    width: 100%;
+    max-width: 340px;
     margin: 0 auto;
   }
 }
