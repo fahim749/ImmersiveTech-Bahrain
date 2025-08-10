@@ -1,11 +1,11 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AI/VR/AR Solutions</title>
+    <title>AI/VR/AR Solutions</title>
     <style>
         :root {
             --primary: #2c3e50;
@@ -34,31 +34,53 @@
             width: 85%;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 1rem 0;
+        }
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
         .header-text {
             flex: 1;
         }
-        .header-image {
+        .header-banner {
             flex: 1;
             text-align: right;
             margin-left: 2rem;
         }
-        .header-image img {
+        .header-banner img {
             max-height: 150px;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: transform 0.3s ease;
         }
-        .header-image img:hover {
+        .header-banner img:hover {
             transform: scale(1.03);
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        .company-logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 0.5rem;
+            display: block;
         }
         .tagline {
             font-size: 1.2rem;
-            margin-top: 0.5rem;
+            margin-top: 0;
+            font-weight: 600;
+            font-family: 'Montserrat', 'Segoe UI', sans-serif;
+            color: var(--light);
+            text-align: left;
+            line-height: 1.3;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        .header-image-large {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 0;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
         }
         .services {
             padding: 3rem 0;
@@ -257,14 +279,52 @@
         .submit-btn:hover {
             background-color: #2980b9;
         }
+
+        /* ----------- MOBILE OPTIMIZATION ----------- */
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+            
+            .logo-container {
+                align-items: center;
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+            
+            .tagline {
+                text-align: center;
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+            
+            .company-logo {
+                margin: 0 auto 0.5rem;
+            }
+            
+            .header-banner {
+                margin-left: 0;
+                text-align: center;
+            }
+            
+            .header-image-large {
+                width: 100%;
+                max-width: 100%;
+                margin: 1rem 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="header-text">
-                <img src="assets/ImmersiveTech_logo_v5.png" alt="ImmersiveTech Logo" class="company-logo">
-                <p class="tagline">Cutting-edge AI/VR/AR Solutions for Business and Education</p>
+                <div class="logo-container">
+                    <img src="assets/ImmersiveTech_logo_v5.png" alt="ImmersiveTech Logo" class="company-logo">
+                    <p class="tagline">Cutting-edge AI/VR/AR Solutions for Business and Education</p>
+                </div>
             </div>
             <div class="header-banner">
                 <img src="assets/immersive-header.jpg" alt="ImmersiveTech Bahrain VR/AR Experience" class="header-image-large">
