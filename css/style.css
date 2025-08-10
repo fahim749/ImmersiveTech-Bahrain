@@ -13,8 +13,8 @@
 }
 
 .header-image-large {
-  width: 100px !important;
-  max-width: 100px !important;
+  width: 200px !important;
+  max-width: 200px !important;
   height: auto !important;
   margin: 0 !important;
   border-radius: 0.5rem;
