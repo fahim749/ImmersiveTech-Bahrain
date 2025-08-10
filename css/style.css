@@ -14,7 +14,7 @@
 
 .header-image-large {
   width: 400px;
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   margin: 0;
   border-radius: 0.5rem;
@@ -35,8 +35,8 @@
     width: 100%;
   }
   .header-image-large {
-    width: 100%;
-    max-width: 100px; /* Let image expand but not too much */
+    width: 200%;
+    max-width: 200px; /* Let image expand but not too much */
     display: block;
     margin: 0 auto;
   }
