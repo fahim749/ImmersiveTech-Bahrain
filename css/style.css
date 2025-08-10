@@ -35,7 +35,7 @@
     width: 100%;
   }
   .header-image-large {
-    width: 100%;
+    width: 200%;
     max-width: 300px; /* Let image expand but not too much */
     display: block;
     margin: 0 auto;
