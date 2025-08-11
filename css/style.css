@@ -103,3 +103,20 @@
 
   
 }
+
+
+.logo-tagline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust as needed for spacing between logo and tagline */
+}
+
+.logo-tagline-group .company-logo {
+    margin-bottom: 0; /* Remove any bottom margin from the logo */
+}
+
+.logo-tagline-group .tagline {
+    margin-top: 0; /* Remove any top margin from the tagline */
+    margin-bottom: 0; /* Remove any bottom margin from the tagline */
+}
+
