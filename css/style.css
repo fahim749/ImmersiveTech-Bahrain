@@ -1,74 +1,105 @@
-/* Main header styles */
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
+.header-banner {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
-.logo-tagline-wrapper {
+.header-banner h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  flex: 1;
+}
+
+.header-image-large {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.company-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* New logo wrapper styling */
+.logo-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
+/* Adjust logo margin */
 .company-logo {
-    max-width: 200px;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0.3rem;
 }
 
+/* Adjust tagline styling */
 .tagline {
-    margin: 5px 0 0 0;
-    padding: 0;
-    font-size: 1.1rem;
-    font-weight: 500;
+    margin-top: 0;
     text-align: left;
-    color: var(--light);
+    font-weight: 500;
 }
 
-.header-banner img {
-    max-height: 150px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
 
-/* Mobile responsiveness */
+
+
+/* ----------- MOBILE OPTIMIZATION ----------- */
 @media (max-width: 600px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .logo-tagline-wrapper {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .header-banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .header-banner h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .header-image-large {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .header-text {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .company-logo {
+    max-width: 150px;
+    margin: 0 auto 1rem;
+  }
+
+.logo-wrapper {
         align-items: center;
-        margin-bottom: 1.5rem;
     }
-    
     .tagline {
         text-align: center;
     }
-    
-    .header-banner img {
-        max-width: 100%;
-    }
-}
 
-/* Rest of your existing CSS remains exactly the same */
-.service-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
 
-.card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
 
-/* Continue with all your other existing CSS rules */
+  
+}
