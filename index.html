@@ -5,7 +5,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> AI/VR/AR Solutions</title>
+    <title>Premium 3D Glasses-Free Screen Experience | ImmersiveTech Bahrain</title>
     <style>
         :root {
             --primary: #2c3e50;
@@ -35,122 +35,83 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-        .header-text {
+        .logo-tagline-group {
             flex: 1;
         }
-        .header-image {
+        .company-logo {
+            max-height: 80px;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .header-banner {
             flex: 1;
             text-align: right;
             margin-left: 2rem;
         }
-        .header-image img {
+        .header-image-large {
             max-height: 150px;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: transform 0.3s ease;
         }
-        .header-image img:hover {
+        .header-image-large:hover {
             transform: scale(1.03);
         }
         h1 {
             margin: 0;
             font-size: 2.5rem;
         }
-        .tagline {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
+        main {
+            width: 85%;
+            max-width: 1200px;
+            margin: 3rem auto;
         }
-        .services {
-            padding: 3rem 0;
-        }
-        h2 {
-            color: var(--primary);
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-        }
-        .service-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        .card {
+        .premium-card {
             background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
             overflow: hidden;
-            transition: transform 0.3s ease;
+            padding: 2.5rem;
+            text-align: center;
         }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card-header {
-            background-color: var(--secondary);
-            color: white;
-            padding: 1rem;
-            font-size: 1.3rem;
-            font-weight: bold;
-        }
-        .card-body {
-            padding: 1.5rem;
-        }
-        .card-image {
+        .premium-card-image {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 1px solid #eee;
+            max-width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.09);
+            margin-bottom: 2rem;
+        }
+        .premium-title {
+            color: var(--primary);
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .premium-desc {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
         }
         .industries {
-            margin-top: 1rem;
+            margin-bottom: 1.5rem;
             font-style: italic;
             color: var(--dark);
+        }
+        .tech-badges {
+            margin-bottom: 2rem;
         }
         .tech-badge {
             display: inline-block;
             background-color: var(--light);
             color: var(--dark);
-            padding: 0.3rem 0.6rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
-        }
-        .about {
-            background-color: var(--light);
-            padding: 3rem 0;
-            text-align: center;
-        }
-        .ar-types {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        .ar-type {
-            width: 30%;
-            min-width: 250px;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-        .ar-type img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .simulation-section {
-            background-color: white;
-            padding: 3rem 0;
-        }
-        .simulation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            align-items: center;
-        }
-        .simulation-image {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .cta {
             padding: 3rem 0;
@@ -181,7 +142,6 @@
             padding: 1.5rem 0;
             margin-top: 2rem;
         }
-        
         /* Contact Form Styles */
         #contact {
             display: none;
@@ -262,134 +222,51 @@
 <body>
     <header>
         <div class="header-container">
-            
-<div class="logo-tagline-group">
-        <img src="assets/ImmersiveTech_logo_v5.png" alt="ImmersiveTech Logo" class="company-logo">
-        <p class="tagline">Cutting-edge AI/VR/AR Solutions for Business and Education</p>
-</div>
-
-           
+            <div class="logo-tagline-group">
+                <img src="assets/ImmersiveTech_logo_v5.png" alt="ImmersiveTech Logo" class="company-logo">
+                <p class="tagline">Premium 3D Glasses-Free Screen Experience for GCC Education & Business</p>
+            </div>
             <div class="header-banner">
                 <img src="assets/immersive-header.jpg" alt="ImmersiveTech Bahrain VR/AR Experience" class="header-image-large">
             </div>
         </div>
     </header>
-
-    <!-- Rest of your content remains exactly the same -->
-    <section class="services">
-        <div class="container">
-            <h2>Our Core Service Offerings</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <div class="card-header">VR-Based Soft Skills Development</div>
-                    <img src="assets/vr_soft_skills.png" alt="VR Soft Skills Training" class="card-image">
-                    <div class="card-body">
-                        <p>Executive Leadership Development program powered by VR technology and AI-driven feedback systems. Features multi-device accessibility and inclusivity features.</p>
-                        <p><strong>Key Benefits:</strong> Boosts confidence, accessibility, and engagement. Includes comprehensive Equity, Diversity, and Inclusion (EDI) training.</p>
-                        <div class="industries">
-                            <strong>Industries:</strong> Healthcare, Finance & Banking, Education, Consultancy, Customer Service, Technology
-                        </div>
-                        <div class="tech-badges">
-                            <span class="tech-badge">VR</span>
-                            <span class="tech-badge">AI Feedback</span>
-                            <span class="tech-badge">BODYSWAPS</span>
-                        </div>
-                    </div>
+    <main>
+        <div class="premium-card">
+            <img src="assets/3D_screen.png" alt="3D Glasses-Free Technology" class="premium-card-image">
+            <div class="premium-title">Premium: 3D Glasses-Free Screen Experience</div>
+            <div class="premium-desc">
+                <p>
+                    Discover the future of visual engagement with ImmersiveTech Bahrain’s <strong>Premium 3D Glasses-Free Screen Experience</strong> — the exclusive GCC service for education and business.
+                </p>
+                <p>
+                    Our solution offers fully immersive rooms equipped with state-of-the-art 3D glasses-free screens and interactive tablets, designed to transform learning, presentations, and exhibitions.
+                </p>
+                <ul style="text-align:left; display:inline-block; margin:1.25rem auto 1.25rem auto; font-size:1rem;">
+                    <li><strong>Unparalleled engagement:</strong> Experience stunning 3D visuals without the need for special glasses.</li>
+                    <li><strong>For education:</strong> Empower classrooms, labs, and training spaces with captivating content and collaborative features.</li>
+                    <li><strong>For business:</strong> Elevate meeting rooms, showrooms, and premium retail with immersive product displays and interactive solutions.</li>
+                    <li><strong>Easy integration:</strong> Works seamlessly with existing devices and AV setups.</li>
+                    <li><strong>Turnkey service:</strong> Consultation, installation, and ongoing support for GCC clients.</li>
+                </ul>
+                <div class="industries">
+                    <strong>Industries:</strong> Education, Business, Luxury Retail, Premium Hospitality, Automotive Showrooms
                 </div>
-
-                <div class="card">
-                    <div class="card-header">AR-Based Enhanced Content Development</div>
-                    <img src="assets/AR_1.png" alt="AR Content Development" class="card-image">
-                    <div class="card-body">
-                        <p>Marker-based AR solutions that transform learning experiences through 3D models, virtual labs, and interactive field trips.</p>
-                        <p><strong>Key Benefits:</strong> Makes immersive learning accessible and affordable, requiring only a smartphone.</p>
-                        <div class="industries">
-                            <strong>Industries:</strong> Education, Healthcare, Automotive, Manufacturing, Tourism & Hospitality
-                        </div>
-                        <div class="tech-badges">
-                            <span class="tech-badge">AR</span>
-                            <span class="tech-badge">Marker-based</span>
-                            <span class="tech-badge">Unity</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">Simulation-Based Process Optimization</div>
-                    <img src="assets/BPS_AI_2.png" alt="Process Optimization" class="card-image">
-                    <div class="card-body">
-                        <p>Utilizing Discrete Event Simulation software to help businesses optimize processes through virtual modelling and testing.</p>
-                        <p><strong>Key Benefits:</strong> Digital twin development, what-if scenario testing, bottleneck identification, and resource optimization.</p>
-                        <div class="industries">
-                            <strong>Industries:</strong> Healthcare, Retail, Supply Chain & Logistics, Manufacturing, Call Centres
-                        </div>
-                        <div class="tech-badges">
-                            <span class="tech-badge">Simul8</span>
-                            <span class="tech-badge">Digital Twin</span>
-                            <span class="tech-badge">Process Optimization</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">Premium: 3D Glasses-Free Screen Experience</div>
-                    <img src="assets/3D_screen.png" alt="3D Glasses-Free Technology" class="card-image">
-                    <div class="card-body">
-                        <p>Cutting-edge fully immersive rooms equipped with 3D glasses-free screens and tablets.</p>
-                        <p><strong>Key Benefits:</strong> Unparalleled visual engagement without the need for special glasses.</p>
-                        <div class="industries">
-                            <strong>Industries:</strong> High-end Education, Luxury Retail, Premium Hospitality, Automotive Showrooms
-                        </div>
-                        <div class="tech-badges">
-                            <span class="tech-badge">3D Glasses-Free</span>
-                            <span class="tech-badge">Immersive Rooms</span>
-                            <span class="tech-badge">Premium</span>
-                        </div>
-                    </div>
+                <div class="tech-badges">
+                    <span class="tech-badge">3D Glasses-Free</span>
+                    <span class="tech-badge">Immersive Rooms</span>
+                    <span class="tech-badge">Premium GCC Service</span>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="simulation-section">
-        <div class="container">
-            <h2>Simulation & Optimization Process</h2>
-            <div class="simulation-grid">
-                <div>
-                    <img src="assets/BPS.jpg" alt="Simulation Process" class="simulation-image">
-                </div>
-                <div>
-                    <h3>Data-Driven Process Optimization</h3>
-                    <p>Our simulation approach combines operating data with synthetic data and machine learning models to create accurate digital twins of your business processes.</p>
-                    <p>We help you test scenarios, identify bottlenecks, and optimize resources before implementing changes in the real world.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <h2>Augmented Reality Technologies</h2>
-            <p>We specialize in all major types of AR implementations to suit different business needs and budgets.</p>
-            
-            <div class="ar-types">
-                <div class="ar-type">
-                    <img src="assets/AR_3.png" alt="AR Types">
-                    <h3>Comprehensive AR Solutions</h3>
-                    <p>From marker-based to projection-based AR, we have the right solution for your specific requirements.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    </main>
     <section class="cta">
         <div class="container">
-            <h2>Ready to Transform Your Business with Immersive Technology?</h2>
-            <p>Contact us to discuss how our solutions can benefit your organization.</p>
+            <h2>Transform Your Space with Premium 3D Experiences</h2>
+            <p>Contact us to learn how our glasses-free 3D technology can benefit your organization in the GCC.</p>
             <button id="contactBtn" class="btn">Get in Touch</button>
         </div>
     </section>
-
     <section id="contact">
         <div class="container">
             <div class="contact-container">
@@ -400,7 +277,6 @@
                     <p><strong>Phone:</strong> <a href="tel:00447463055604">+44 7463 055604</a></p>
                     <p><strong>Based in:</strong> Bahrain </p>
                 </div>
-                
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -423,50 +299,31 @@
             </div>
         </div>
     </section>
-
     <footer>
         <div class="container">
             <p>&copy; 2025 ImmersiveTech Bahrain. All rights reserved.</p>
-            <p>Pioneering AI/VR/AR solutions for the Middle East region.</p>
+            <p>Pioneering Premium 3D Glasses-Free Solutions for GCC Education & Business.</p>
         </div>
     </footer>
-
     <script>
         // Toggle contact section visibility
         const contactBtn = document.getElementById('contactBtn');
         const contactSection = document.getElementById('contact');
-        
         contactBtn.addEventListener('click', function() {
-            // Toggle the 'active' class to show/hide the contact section
             contactSection.classList.toggle('active');
-            
-            // Scroll to contact section if it's being shown
             if (contactSection.classList.contains('active')) {
                 contactSection.scrollIntoView({ behavior: 'smooth' });
-            }
-            
-            // Change button text based on state
-            if (contactSection.classList.contains('active')) {
                 contactBtn.textContent = 'Hide Contact';
             } else {
                 contactBtn.textContent = 'Get in Touch';
             }
         });
-        
         // Simple form submission handler
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would normally send the data to a server
-            // For demonstration, we'll just show a confirmation
             alert(`Thank you for your message, ${name}! We will contact you at ${email} soon.`);
-            
-            // Reset form
             this.reset();
         });
     </script>
