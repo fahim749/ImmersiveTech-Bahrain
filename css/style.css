@@ -1,122 +1,59 @@
-.header-banner {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
+/* Header container optimization */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-.header-banner h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  flex: 1;
-}
-
-.header-image-large {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin: 0;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-}
-
+/* Logo optimization */
 .company-logo {
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 1rem;
-  display: block;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
-/* New logo wrapper styling */
-.logo-wrapper {
+/* Header banner image optimization */
+.header-image-large {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+/* Logo and tagline group optimization */
+.logo-tagline-group {
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
 }
 
-/* Adjust logo margin */
-.company-logo {
-    margin-bottom: 0.3rem;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
 
-/* Adjust tagline styling */
-.tagline {
-    margin-top: 0;
-    text-align: left;
-    font-weight: 500;
-}
-
-
-
-
-/* ----------- MOBILE OPTIMIZATION ----------- */
-@media (max-width: 600px) {
-  .header-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .header-banner {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 0;
-    width: 100%;
-  }
-  
-  .header-banner h1 {
-    font-size: 1.8rem;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .header-image-large {
-    width: 100%;
-    max-width: 100%;
-    margin: 1rem 0;
-  }
-  
-  .header-text {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .tagline {
-    font-size: 1rem;
-  }
-  
-  .company-logo {
-    max-width: 150px;
-    margin: 0 auto 1rem;
-  }
-
-.logo-wrapper {
+    .logo-tagline-group {
         align-items: center;
     }
-    .tagline {
-        text-align: center;
+
+    .company-logo {
+        max-width: 180px;
+        margin: 0 auto;
     }
 
-
-
-  
+    .header-image-large {
+        max-width: 100%;
+    }
 }
-
-
-.logo-tagline-group {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Adjust as needed for spacing between logo and tagline */
-}
-
-.logo-tagline-group .company-logo {
-    margin-bottom: 0; /* Remove any bottom margin from the logo */
-}
-
-.logo-tagline-group .tagline {
-    margin-top: 0; /* Remove any top margin from the tagline */
-    margin-bottom: 0; /* Remove any bottom margin from the tagline */
-}
-
