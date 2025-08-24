@@ -11,7 +11,7 @@
 
 /* Logo optimization */
 .company-logo {
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
     display: block;
     object-fit: contain;
@@ -19,7 +19,7 @@
 
 /* Header banner image optimization */
 .header-image-large {
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
