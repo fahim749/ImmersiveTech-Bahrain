@@ -220,6 +220,97 @@
         .submit-btn:hover {
             background-color: #2980b9;
         }
+        
+        /* New business demonstration sections */
+        .business-demo-sections {
+            margin: 4rem 0;
+        }
+        
+        .demo-section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            margin-bottom: 3rem;
+            padding: 2.5rem;
+        }
+        
+        .demo-section-row {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .demo-section:nth-child(even) .demo-section-row {
+            flex-direction: row-reverse;
+        }
+        
+        .demo-image {
+            flex: 1;
+            max-width: 500px;
+        }
+        
+        .demo-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.09);
+        }
+        
+        .demo-content {
+            flex: 1;
+            padding: 1rem;
+        }
+        
+        .demo-title {
+            color: var(--primary);
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+        
+        .demo-highlights {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        
+        .demo-highlights li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .demo-highlights li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+        }
+        
+        /* Responsive design for demo sections */
+        @media (max-width: 768px) {
+            .demo-section-row,
+            .demo-section:nth-child(even) .demo-section-row {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .demo-image {
+                max-width: 100%;
+            }
+            
+            .demo-content {
+                padding: 1rem 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -259,6 +350,75 @@
                     <span class="tech-badge">3D Glasses-Free</span>
                     <span class="tech-badge">Immersive Rooms</span>
                     <span class="tech-badge">Premium GCC Service</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Business Demonstration Sections -->
+        <div class="business-demo-sections">
+            <!-- Education Classroom Section -->
+            <div class="demo-section">
+                <div class="demo-section-row">
+                    <div class="demo-image">
+                        <img src="assets/immersive_education_classroom.png" alt="Immersive Education Classroom Experience">
+                    </div>
+                    <div class="demo-content">
+                        <div class="demo-title">Transforming Education Through Immersive Learning</div>
+                        <div class="demo-description">
+                            <p>Revolutionize your classroom experience with our cutting-edge 3D glasses-free technology. Students engage with complex concepts through stunning visual representations that bring abstract ideas to life.</p>
+                            <ul class="demo-highlights">
+                                <li>Enhanced student engagement and retention</li>
+                                <li>Interactive 3D models for science and mathematics</li>
+                                <li>Collaborative learning environments</li>
+                                <li>Seamless integration with existing curriculum</li>
+                            </ul>
+                            <p>Perfect for universities, schools, and training centers across the GCC region seeking to provide world-class educational experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Engineering Lab Section -->
+            <div class="demo-section">
+                <div class="demo-section-row">
+                    <div class="demo-image">
+                        <img src="assets/immersive_engineering_lab.png" alt="Immersive Engineering Laboratory">
+                    </div>
+                    <div class="demo-content">
+                        <div class="demo-title">Advanced Engineering & Technical Training</div>
+                        <div class="demo-description">
+                            <p>Empower your engineering programs with immersive 3D visualization capabilities. Students can explore complex machinery, architectural designs, and engineering principles in unprecedented detail.</p>
+                            <ul class="demo-highlights">
+                                <li>3D CAD model visualization and manipulation</li>
+                                <li>Virtual prototyping and testing environments</li>
+                                <li>Real-time collaborative design sessions</li>
+                                <li>Safety training through immersive simulations</li>
+                            </ul>
+                            <p>Ideal for engineering faculties, technical institutes, and research centers looking to enhance practical learning outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Business Meeting Section -->
+            <div class="demo-section">
+                <div class="demo-section-row">
+                    <div class="demo-image">
+                        <img src="assets/immersive_business_meeting.png" alt="Immersive Business Meeting Environment">
+                    </div>
+                    <div class="demo-content">
+                        <div class="demo-title">Next-Generation Business Presentations</div>
+                        <div class="demo-description">
+                            <p>Elevate your corporate communications with immersive 3D presentations that captivate clients and stakeholders. Transform data visualization and product demonstrations into memorable experiences.</p>
+                            <ul class="demo-highlights">
+                                <li>Dynamic 3D data visualization and analytics</li>
+                                <li>Interactive product showcases and demos</li>
+                                <li>Immersive client presentation experiences</li>
+                                <li>Remote collaboration with global teams</li>
+                            </ul>
+                            <p>Perfect for corporate boardrooms, showrooms, and premium retail spaces seeking to impress and engage their audience.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
